@@ -3,4 +3,7 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+    <color name="color_background_event_card">#91ff96</color>
+    <color name="color_background_notification_card">#ffa8ae</color>
+    <color name="color_background_movie_card">#a9c7ff</color>
 </resources>

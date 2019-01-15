@@ -10,20 +10,20 @@
     <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="@dimen/width_card_item"
-            android:background="@color/color_background_event_card">
+            android:background="@color/color_background_notification_card">
 
         <TextView
-                android:id="@+id/elementType"
+                android:id="@+id/notificationType"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/text_event_type"
+                android:text="@string/text_notification_type"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 android:layout_marginStart="@dimen/margin_start_item_type"/>
 
         <TextView
-                android:id="@+id/eventName"
+                android:id="@+id/flightDate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="@dimen/margin_end_main_property"
@@ -32,7 +32,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                tools:text="Event name"/>
+                tools:text="Flight time: 12.11.2018 12:14"/>
 
     </android.support.constraint.ConstraintLayout>
 

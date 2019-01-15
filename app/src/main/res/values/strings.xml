@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Simple App</string>
+
+    <!-- RecyclerView item constants -->
+    <string name="text_event_type">Event</string>
+    <string name="text_notification_type">Notification</string>
+    <string name="text_movie_type">Movie</string>
+    <string name="text_notice_flight_date">Flight date: %s</string>
+    <string name="text_movie_time_interval">Time: %s</string>
 </resources>
