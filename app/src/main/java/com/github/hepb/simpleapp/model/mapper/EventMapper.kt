@@ -3,7 +3,6 @@ package com.github.hepb.simpleapp.model.mapper
 import com.github.hepb.simpleapp.model.data.Event
 import com.github.hepb.simpleapp.model.view.EventUIModel
 import java.text.DateFormat
-import java.util.*
 
 class EventMapper(
     dateFormat: DateFormat,

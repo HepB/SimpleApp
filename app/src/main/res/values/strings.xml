@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">Simple App</string>
+    <string name="text_no_data">No data</string>
+    <string name="format_time" translatable="false">HH:mm</string>
 
     <!-- RecyclerView item constants -->
     <string name="text_event_type">Event</string>
