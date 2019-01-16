@@ -2,11 +2,12 @@
     <string name="app_name">Simple App</string>
     <string name="text_no_data">No data</string>
     <string name="format_time" translatable="false">HH:mm</string>
+    <string name="format_date_time">yyyy-MM-dd HH:mm</string>
 
     <!-- RecyclerView item constants -->
     <string name="text_event_type">Event</string>
     <string name="text_notification_type">Notification</string>
     <string name="text_movie_type">Movie</string>
-    <string name="text_notice_flight_date">Flight date: %s</string>
+    <string name="text_notice_flight_date">Date: %s</string>
     <string name="text_movie_time_interval">Time: %s</string>
 </resources>

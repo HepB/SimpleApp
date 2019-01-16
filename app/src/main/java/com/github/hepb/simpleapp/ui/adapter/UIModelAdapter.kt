@@ -24,15 +24,15 @@ class UIModelAdapter: RecyclerView.Adapter<RecyclerView.ViewHolder>() {
         val inflater = LayoutInflater.from(viewGroup.context)
         return when(type) {
             UiModel.EVENT_TYPE -> {
-                val view = inflater.inflate(R.layout.item_event, viewGroup)
+                val view = inflater.inflate(R.layout.item_event, viewGroup, false)
                 EventViewHolder(view)
             }
             UiModel.NOTICE_TYPE -> {
-                val view = inflater.inflate(R.layout.item_notification, viewGroup)
+                val view = inflater.inflate(R.layout.item_notification, viewGroup, false)
                 NoticeViewHolder(view)
             }
             UiModel.MOVIE_TYPE -> {
-                val view = inflater.inflate(R.layout.item_movie, viewGroup)
+                val view = inflater.inflate(R.layout.item_movie, viewGroup, false)
                 MovieViewHolder(view)
             }
             else -> throw IllegalArgumentException("Unknown item type")
@@ -70,7 +70,7 @@ class UIModelAdapter: RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
     class NoticeViewHolder(view: View): RecyclerView.ViewHolder(view) {
         fun bind(notice: NoticeUIModel) {
-            val mainProperty = itemView.findViewById<TextView>(R.id.movieInterval)
+            val mainProperty = itemView.findViewById<TextView>(R.id.flightDate)
             mainProperty.text = itemView.context.resources.getString(R.string.text_notice_flight_date, notice.flightDate)
         }
     }
@@ -78,7 +78,7 @@ class UIModelAdapter: RecyclerView.Adapter<RecyclerView.ViewHolder>() {
     class MovieViewHolder(view: View): RecyclerView.ViewHolder(view) {
         fun bind(movie: MovieUIModel) {
             val mainProperty = itemView.findViewById<TextView>(R.id.movieInterval)
-            mainProperty.text = itemView.context.resources.getString(R.string.text_notice_flight_date, movie.timeInterval)
+            mainProperty.text = itemView.context.resources.getString(R.string.text_movie_time_interval, movie.timeInterval)
         }
     }
 }

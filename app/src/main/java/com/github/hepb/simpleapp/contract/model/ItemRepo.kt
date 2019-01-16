@@ -1,4 +1,4 @@
-package com.github.hepb.simpleapp.repo
+package com.github.hepb.simpleapp.contract.model
 
 import com.github.hepb.simpleapp.model.view.UiModel
 import io.reactivex.Single

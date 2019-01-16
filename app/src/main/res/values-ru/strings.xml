@@ -2,11 +2,12 @@
 <resources>
     <string name="app_name">Простое приложение</string>
     <string name="text_no_data">Нет данных</string>
+    <string name="format_date_time">dd.MM.yyyy HH:mm</string>
 
     <!-- RecyclerView item constants -->
     <string name="text_event_type">Событие</string>
     <string name="text_notification_type">Уведомление</string>
     <string name="text_movie_type">Маршрут</string>
-    <string name="text_notice_flight_date">Дата вылета: %s</string>
+    <string name="text_notice_flight_date">Вылет: %s</string>
     <string name="text_movie_time_interval">Время: %s</string>
 </resources>

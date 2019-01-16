@@ -8,7 +8,7 @@ import com.github.hepb.simpleapp.model.mapper.EventMapper
 import com.github.hepb.simpleapp.model.mapper.MovieMapper
 import com.github.hepb.simpleapp.model.mapper.NoticeMapper
 import com.github.hepb.simpleapp.model.view.UiModel
-import com.github.hepb.simpleapp.repo.ItemRepo
+import com.github.hepb.simpleapp.contract.model.ItemRepo
 import io.reactivex.Single
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
@@ -33,6 +33,7 @@ class RandomItemRepo(
         result.addAll(getRandomEvents(3, 33))
         result.addAll(getRandomMovies(3, 33))
         result.addAll(getRandomNotices(4, 34))
+        result.shuffle()
         return result
     }
 
