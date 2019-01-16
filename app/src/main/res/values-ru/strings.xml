@@ -10,4 +10,18 @@
     <string name="text_movie_type">Маршрут</string>
     <string name="text_notice_flight_date">Вылет: %s</string>
     <string name="text_movie_time_interval">Время: %s</string>
+
+    <!-- EventActivity -->
+    <string name="text_event_name">Название: %s</string>
+    <string name="text_start_date">Дата начала: %s</string>
+    <string name="text_finish_date">Дата конца: %s</string>
+
+    <!-- Movie Activity -->
+    <string name="text_from">Отправки из: %s</string>
+    <string name="text_to">Прибытие в: %s</string>
+    <string name="text_time_interval">Время в пути: %s</string>
+
+    <!-- Notice Activity -->
+    <string name="text_flight_date">Дата вылета: %s</string>
+    <string name="text_gate">Выход: %s</string>
 </resources>

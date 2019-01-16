@@ -10,4 +10,18 @@
     <string name="text_movie_type">Movie</string>
     <string name="text_notice_flight_date">Date: %s</string>
     <string name="text_movie_time_interval">Time: %s</string>
+
+    <!-- EventActivity -->
+    <string name="text_event_name">Name: %s</string>
+    <string name="text_start_date">Start date: %s</string>
+    <string name="text_finish_date">Finish date: %s</string>
+
+    <!-- Movie Activity -->
+    <string name="text_from">From: %s</string>
+    <string name="text_to">To: %s</string>
+    <string name="text_time_interval">Flight time: %s</string>
+
+    <!-- Notice Activity -->
+    <string name="text_flight_date">Flight date: %s</string>
+    <string name="text_gate">Gate: %s</string>
 </resources>

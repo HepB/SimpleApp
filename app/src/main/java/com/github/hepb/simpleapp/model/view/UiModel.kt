@@ -1,6 +1,8 @@
 package com.github.hepb.simpleapp.model.view
 
-interface UiModel {
+import java.io.Serializable
+
+interface UiModel: Serializable {
     fun getType(): Int
 
     companion object {

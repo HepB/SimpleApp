@@ -29,7 +29,7 @@ class AppModule(private val app: Application) {
     fun eventMapper(context: Context): EventMapper =
         EventMapper(
             noDataMessage = context.resources.getString(R.string.text_no_data),
-            dateFormat = SimpleDateFormat(context.resources.getString(R.string.format_time), Locale.getDefault())
+            dateFormat = SimpleDateFormat(context.resources.getString(R.string.format_date_time), Locale.getDefault())
         )
 
     @Provides
