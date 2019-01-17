@@ -11,6 +11,7 @@ import com.github.hepb.simpleapp.contract.view.MvpMainActivity
 import com.github.hepb.simpleapp.model.view.UiModel
 import com.github.hepb.simpleapp.ui.adapter.UIModelAdapter
 import kotlinx.android.synthetic.main.activity_main.*
+import timber.log.Timber
 
 class MainActivity : MvpAppCompatActivity(), MvpMainActivity {
 
@@ -39,6 +40,7 @@ class MainActivity : MvpAppCompatActivity(), MvpMainActivity {
     }
 
     override fun setItemsData(items: List<UiModel>) {
+        Timber.d("Items: ${items.size}")
         adapter.items.clear()
         adapter.items.addAll(items)
         adapter.notifyDataSetChanged()

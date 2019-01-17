@@ -6,10 +6,10 @@ import com.github.hepb.simpleapp.utils.nextNotice
 import java.util.*
 
 class NoticeRandomGenerator: ItemRandomGenerator {
-    override fun generateItems(min: Int, max: Int): List<DataModel> {
+    override fun generateItems(count: Int): List<DataModel> {
         val random = Random()
         val result: MutableList<Notice> = ArrayList()
-        for (i in min..max) {
+        for (i in 1..count) {
             result.add(random.nextNotice())
         }
         return result

@@ -7,10 +7,10 @@ import java.util.ArrayList
 import java.util.Random
 
 class EventRandomGenerator: ItemRandomGenerator {
-    override fun generateItems(min: Int, max: Int): List<DataModel> {
+    override fun generateItems(count: Int): List<DataModel> {
         val random = Random()
         val result: MutableList<Event> = ArrayList()
-        for (i in min..max) {
+        for (i in 1..count) {
             result.add(random.nextEvent())
         }
         return result

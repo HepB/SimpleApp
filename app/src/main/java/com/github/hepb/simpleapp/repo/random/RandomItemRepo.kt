@@ -9,10 +9,12 @@ import com.github.hepb.simpleapp.model.mapper.MovieMapper
 import com.github.hepb.simpleapp.model.mapper.NoticeMapper
 import com.github.hepb.simpleapp.model.view.UiModel
 import com.github.hepb.simpleapp.contract.model.ItemRepo
+import com.github.hepb.simpleapp.utils.nextInt
 import io.reactivex.Single
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
 import java.lang.IllegalArgumentException
+import java.util.*
 
 class RandomItemRepo(
     private val eventMapper: EventMapper,
@@ -39,17 +41,20 @@ class RandomItemRepo(
 
     private fun getRandomEvents(min: Int, max: Int): List<DataModel> {
         val eventGenerator = EventRandomGenerator()
-        return eventGenerator.generateItems(min, max)
+        val count = Random().nextInt(min..max)
+        return eventGenerator.generateItems(count)
     }
 
     private fun getRandomMovies(min: Int, max: Int): List<DataModel> {
         val movieGenerator = MovieRandomGenerator()
-        return movieGenerator.generateItems(min, max)
+        val count = Random().nextInt(min..max)
+        return movieGenerator.generateItems(count)
     }
 
     private fun getRandomNotices(min: Int, max: Int): List<DataModel> {
         val noticesGenerator = NoticeRandomGenerator()
-        return noticesGenerator.generateItems(min, max)
+        val count = Random().nextInt(min..max)
+        return noticesGenerator.generateItems(count)
     }
 
     private fun mapItem(item: DataModel): UiModel {
